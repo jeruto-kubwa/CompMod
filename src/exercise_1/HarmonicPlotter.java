@@ -47,6 +47,6 @@ public class HarmonicPlotter {
     // This static method does the real work and evaluates our function
     static double SquareWaveFourierSeries(double x) {
     // Call the maths library to evaluate the lowest terms in the Fourier series for a square wave.
-    return Math.sin(x) + (1/3)*Math.sin(3*x) + (1/5)*Math.sin(5*x) + (1/7)*Math.sin(7*x);
+    return (Math.sin(x) + Math.sin(3.0*x)/3.0 + Math.sin(5.0*x)/5.0 + Math.sin(7.0*x)/7.0);
     }
 }
